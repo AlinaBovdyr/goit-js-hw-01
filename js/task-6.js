@@ -4,11 +4,10 @@ let message;
 
 do {
   input = prompt('Введите число');
-
   if (isNaN(input)) {
     alert('Было введено не число, попробуйте еще раз');
     total = 0;
-  } else if (Number(input)) {
+  } else {
     total += Number(input);
   }
   console.log(input);
