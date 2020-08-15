@@ -20,7 +20,7 @@
 // Индия - 80 кредитов
 // Ямайка - 120 кредитов
 
-const countryName = 'индия';
+const countryName = 'австраЛИЯ';
 
 const CANCELED_BY_USER = 'Отменено пользователем!';
 const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
@@ -37,19 +37,19 @@ if (countryName === null) {
   country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase(); // Write code on this line
   switch (country) {
     // Write code under this line
-    case (country = CHINA):
+    case CHINA:
       message = `Доставка в ${country} будет стоить 100 кредитов`;
       console.log(message);
       break;
-    case (country = AUSTRALIA):
+    case AUSTRALIA:
       message = `Доставка в ${country} будет стоить 170 кредитов`;
       console.log(message);
       break;
-    case (country = INDIA):
+    case INDIA:
       message = `Доставка в ${country} будет стоить 80 кредитов`;
       console.log(message);
       break;
-    case (country = JAMAICA):
+    case JAMAICA:
       message = `Доставка в ${country} будет стоить 120 кредитов`;
       console.log(message);
       break;
