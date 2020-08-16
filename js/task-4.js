@@ -1,4 +1,4 @@
-const orderPieces = null;
+const orderPieces = 2;
 
 const credits = 23580;
 const pricePerDroid = 3000;
@@ -13,16 +13,12 @@ let message;
 
 if (totalPrice <= credits && orderPieces !== null) {
   message = `Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов`;
-  console.log(message);
 } else if (orderPieces === null) {
   message = CANCELED_BY_USER;
-  console.log(message);
 } else {
   message = ACCESS_DENIED;
-  console.log(message);
 }
-
-// console.log(message);
+console.log(message);
 
 //если orderPieces равно 4
 // то значение message будет равно
