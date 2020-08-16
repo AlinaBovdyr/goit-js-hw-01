@@ -10,16 +10,12 @@ let message;
 // Write code under this line
 if (userPassword === ADMIN_PASSWORD) {
   message = ACCESS_IS_ALLOWED;
-  console.log(message);
 } else if (userPassword === null) {
   message = CANCELED_BY_USER;
-  console.log(message);
-} else if (userPassword !== ADMIN_PASSWORD) {
+} else {
   message = ACCESS_DENIED;
-  console.log(message);
 }
-
-// console.log(message);
+console.log(message);
 
 //если userPassword равно 'jqueryismyjam'
 // то значение message будет равно
