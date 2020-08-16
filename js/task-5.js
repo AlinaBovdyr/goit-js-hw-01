@@ -20,7 +20,7 @@
 // Индия - 80 кредитов
 // Ямайка - 120 кредитов
 
-const countryName = 'австраЛИЯ';
+const countryName = 'китай';
 
 const CANCELED_BY_USER = 'Отменено пользователем!';
 const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
@@ -38,24 +38,19 @@ if (countryName === null) {
   switch (country) {
     // Write code under this line
     case CHINA:
-      message = `Доставка в ${country} будет стоить 100 кредитов`;
-      console.log(message);
+      price = 100;
       break;
     case AUSTRALIA:
-      message = `Доставка в ${country} будет стоить 170 кредитов`;
-      console.log(message);
+      price = 170;
       break;
     case INDIA:
-      message = `Доставка в ${country} будет стоить 80 кредитов`;
-      console.log(message);
+      price = 80;
       break;
     case JAMAICA:
-      message = `Доставка в ${country} будет стоить 120 кредитов`;
-      console.log(message);
+      price = 120;
       break;
     default:
       message = NO_DELIVERY;
-      console.log(message);
   }
 }
 if (price > 0) {
